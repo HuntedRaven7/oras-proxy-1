@@ -15,3 +15,7 @@ $ curl localhost:8000/ghcr.io/tulilirockz/zirconium/usr-verity-sig:latest
 ```
 
 This is heavily WIP! This is supposed to also expose `.raw` endpoints for each of the images in a registry.
+
+TODO:
+- [ ] Implement SHA256SUMs pattern in a github actions workflow
+- [ ] Implement a way of translating disk image names into OCI artifact names so we can pull them (`nvidia-runtime-x86-64_nightly.20260811.0.raw.zst` -> `ghcr.io/zirconium-dev/nvidia-runtime:nightly.20260811.0-x86_64`)
